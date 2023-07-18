@@ -1,0 +1,30 @@
+@media screen and (max-width: 576px) {
+    .nav-bar{
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        /* margin: 0 auto; */
+        align-items: center;
+        width: 100%;
+    }
+
+    nav>ul {
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+        margin: 0 auto;
+        margin-top: 62px;
+        gap: 62px;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        /* align-items: center; */
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .banner>img {
+        margin-top: 78px;
+        margin-bottom: 24px;
+    }
+}
