@@ -1,20 +1,57 @@
-@media screen and (min-width: 576px) and (max-width: 1024px) {
-    .nav-bar,
-    .banner-title,
-    .banner {
+@media screen and (min-width: 576px) and (max-width: 1224px) {
+    .nav-bar
+     {
         flex-direction: column;
-        /* flex-wrap: wrap; */
-        padding: 100px;
+        padding: 50px;
         justify-content: center;
         align-items: center;
     }
-    nav>ul {
-        flex-wrap: wrap;
+    /*  */
+    main {
+        padding: 0;
+    }
+    /*  */
+
+    .banner-1 {
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+    .banner-1-title {
+        width: 100%;
+        height: auto;
+        padding: 60px 0;
+        text-align: start;
+        padding-left: 200px;
+    }
+    .banner-1-description {
+        justify-content: flex-start;
+    }
+    .banner-1-img img {
+        height: 600px;
+    }
+    .banner-1-btn {
+        justify-content: start;
+        gap: 24px;
+    }
+
+    /*  */
+    .banner-2 {
+        flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
-        margin-top: 62px;
-        gap: 62px;
-        flex-wrap: wrap;
+        padding: 20px;
+    }
+    .banner-2-title {
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+    .banner-2-title p {
+        text-align: center;
+        height: auto;
+    }
+    .banner-2-btn{
+        align-self: center;
     }
   }
   
