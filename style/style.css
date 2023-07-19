@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Work+Sans:wght@400;500;600;700&display=swap');
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -35,7 +37,7 @@ body {
     object-fit: cover;
 }
 
-.website-title {
+.nav-bar .website-title {
     color: #0B0223;
     font-size: 3rem;
     font-weight: 700;
@@ -249,6 +251,10 @@ main {
 
 
 /*  */
+.card-section {
+    padding: 20px;
+}
+
 .card-section h1 {
     color: #0B0223;
     text-align: center;
@@ -274,32 +280,49 @@ main {
 }
 
 .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-    grid-gap: 20px;
-    position: relative;
+    display: flex;
 }
 
 .card {
-    display: grid;
-    grid-template-rows: max-content 200px 1fr;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
 }
-.card img {
+
+.card-img {
+    width: 200px;
     position: relative;
-    object-fit: cover;
+}
+
+.card-img img {
+    width: 100%;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.card-play-icon {
     width: 100%;
     height: 100%;
-    background-image: url("/images/Rectangle\ 4.png");
-    display: inline-block;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s ease;
 }
 
 .card :hover {
-    position: absolute;
-    border-radius: 16px;
-    background-image: url(/icons/play.png);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+    opacity: 1;
 }
-
 
 /*  */
 
@@ -308,9 +331,10 @@ main {
 /*  */
 .play {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
-.play-describe{
+
+.play-describe {
     display: flex;
     flex-direction: column;
     width: 280px;
@@ -338,17 +362,20 @@ main {
     font-size: 1.025rem;
     font-weight: 400;
 }
-.play-img{
+
+.play-img {
     margin-top: 200px;
     margin-bottom: 0;
     align-items: center;
 }
+
 .play .img-1 {
     width: 80%;
     border-radius: 8px;
     transform: translateX(0.5in);
 }
-.play-img .img-2{
+
+.play-img .img-2 {
     width: 40%;
     transform: translateX(-10in);
     transform: translateY(-2in);
@@ -358,6 +385,7 @@ main {
 /*  */
 .careers {
     border: 1px solid red;
+    margin-top: 120px;
 }
 
 /*  */
@@ -367,12 +395,14 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .game-types button {
-    width: 138px;
+    width: 148px;
     height: 50px;
-    flex-shrink: 0;
+    padding: 10px;
     border-radius: 50px;
     background: #FFF;
     margin: 18px;
@@ -380,12 +410,14 @@ main {
     display: inline-flex;
     align-items: center;
     gap: 16px;
-    flex: 1 1 1px;
+    /* flex: 1 1 1px; */
 }
-.game-types button img{
+
+.game-types button img {
     width: 40px;
     height: 40px;
 }
+
 .game-types button:hover {
     border: 1px solid #F948B2;
     color: #F948B2;
@@ -395,13 +427,14 @@ main {
 /*  */
 footer {
     max-width: 1920px;
-    padding: 10px 240px 15px 240px;
-    /* padding-top: 120px; */
+    height: 500px;
+    padding: 120px 240px 15px 240px;
     background: #0B0223;
     color: #FFF;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 24px;
 }
 
 .website-title {
@@ -411,13 +444,19 @@ footer {
 footer ul {
     list-style: none;
     display: flex;
-    /* flex-direction: row; */
-    justify-content: space-between;
-    gap: 60px;
+    justify-content: center;
+    /* align-items: center; */
+    /* text-align: center; */
+    gap: 160px;
 }
 
 footer a {
-    display: inline-flex;
-    gap: 400px;
+    margin: 16px;
+    padding-top: 40px;
+    align-items: center;
+    justify-content: center;
     background-color: #FFF;
+}
+footer li {
+    cursor: pointer;
 }
