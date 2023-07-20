@@ -1,7 +1,8 @@
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 300px) and (max-width: 576px) {
     .nav-bar {
         flex-direction: column;
         padding: 1px 2px;
+        margin-bottom: 10px;
     }
 
     .logo-title,
@@ -27,6 +28,7 @@
 
     .banner-1{
         flex-direction: column-reverse;
+        margin-top: 10px;
         gap: 0;
     }
     .banner-1-title {
@@ -50,14 +52,15 @@
         height: 400px;
     }
     .banner-1-btn {
+        align-items: center;
         justify-content: center;
-        gap: 24px;
+        gap: 14px;
     }
     .banner-1-btn-1{
-        font-size: .90rem;
+        font-size: .80rem;
     }
     .banner-1-btn-2{
-        font-size: .90rem;
+        font-size: .80rem;
     }
 
     /*  */
@@ -67,15 +70,18 @@
         align-items: center;
         justify-content: center;
         padding: 20px;
+
     }
     .banner-2-title {
-        align-items: center;
-        justify-content: center;
+        text-align: center;
+        margin-bottom: 20px;
         height: auto;
+        width: 200px;
     }
     .banner-2-title p {
         text-align: center;
         height: auto;
+        width: 200px;
     }
     .banner-2-btn{
         align-self: center;
@@ -88,6 +94,38 @@
         margin-top: 15px;
     }
 
+    /*  */
+    .play {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+    .play-1 {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 20px;
+    }
+    .play-describe {
+        text-align: center;
+        padding-left: 10px;
+    }
+    .play-describe-1 {
+        text-align: center;
+        padding: 10px;
+    }
+    .play .img-1 {
+        transform: translateX(70px);
+    }
+    .play-1-img .img-4 {
+        width: 40%;
+        transform: translate(200px , -100px);
+        /* margin-right: 20px; */
+    }
+
+    .careers {
+        flex-direction: column;
+        align-items: center;
+    }
     footer{
         max-width: 420px;
         padding: 0;
