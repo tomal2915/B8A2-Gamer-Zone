@@ -246,6 +246,8 @@ main {
 }
 .banner-2-btn {
     align-self: flex-end;
+    margin-top: 32px;
+    margin-bottom: 24px;
 }
 
 .banner-2-img img {
