@@ -75,8 +75,9 @@
     } */
     .play-1-img .img-4 {
         width: 40%;
-        transform: translate(200px , -100px);
+        transform: translate(200px, -100px);
     }
+
     footer {
         padding: 0;
         gap: 10px;

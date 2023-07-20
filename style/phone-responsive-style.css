@@ -26,11 +26,12 @@
 
     /*  */
 
-    .banner-1{
+    .banner-1 {
         flex-direction: column-reverse;
         margin-top: 10px;
         gap: 0;
     }
+
     .banner-1-title {
         width: 100%;
         height: auto;
@@ -39,32 +40,39 @@
         padding-left: 40px;
 
     }
+
     .banner-1-title h1 {
         font-size: 2rem;
     }
+
     .banner-1-title h2 {
         font-size: 4rem;
     }
+
     .banner-1-description {
         gap: 10px;
     }
+
     .banner-1-img img {
         height: 400px;
     }
+
     .banner-1-btn {
         align-items: center;
         justify-content: center;
         gap: 14px;
     }
-    .banner-1-btn-1{
+
+    .banner-1-btn-1 {
         font-size: .80rem;
     }
-    .banner-1-btn-2{
+
+    .banner-1-btn-2 {
         font-size: .80rem;
     }
 
     /*  */
-    
+
     .banner-2 {
         flex-direction: column-reverse;
         align-items: center;
@@ -72,18 +80,21 @@
         padding: 20px;
 
     }
+
     .banner-2-title {
         text-align: center;
         margin-bottom: 20px;
         height: auto;
         width: 200px;
     }
+
     .banner-2-title p {
         text-align: center;
         height: auto;
         width: 200px;
     }
-    .banner-2-btn{
+
+    .banner-2-btn {
         align-self: center;
     }
 
@@ -100,25 +111,30 @@
         align-items: center;
         margin: 20px;
     }
+
     .play-1 {
         flex-direction: column-reverse;
         align-items: center;
         margin: 20px;
     }
+
     .play-describe {
         text-align: center;
         padding-left: 10px;
     }
+
     .play-describe-1 {
         text-align: center;
         padding: 10px;
     }
+
     .play .img-1 {
         transform: translateX(70px);
     }
+
     .play-1-img .img-4 {
         width: 40%;
-        transform: translate(200px , -100px);
+        transform: translate(200px, -100px);
         /* margin-right: 20px; */
     }
 
@@ -126,7 +142,8 @@
         flex-direction: column;
         align-items: center;
     }
-    footer{
+
+    footer {
         max-width: 420px;
         padding: 0;
         gap: 10px;
@@ -135,10 +152,11 @@
         justify-content: center;
         text-align: center;
     }
-    footer ul{
+
+    footer ul {
         flex-wrap: wrap;
         gap: 10px;
-        
+
     }
-    
+
 }

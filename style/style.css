@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Work+Sans:wght@400;500;600;700&display=swap');
 
+
+/* shared style */
 * {
     margin: 0;
     padding: 0;
@@ -103,8 +105,9 @@ main {
     padding: 0 240px 15px 240px;
 }
 
-/* style for banner section */
 
+
+/* style for banner-1 section */
 .banner-1 {
     max-width: 1920px;
     display: flex;
@@ -119,9 +122,10 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    justify-content: center;
     width: 60%;
     height: 600px;
-    padding: 10px 50px 50px 0px;
+    padding: 50px 50px 50px 15px;
 }
 
 .banner-1-title h1 {
@@ -202,7 +206,7 @@ main {
 }
 
 
-/*  */
+/* style for banner-2 section */
 .banner-2 {
     max-width: 1920px;
     display: flex;
@@ -218,6 +222,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 50px 50px 50px 15px;
 }
 
 .banner-2-title h1 {
@@ -239,11 +244,13 @@ main {
     font-weight: 400;
     line-height: 30px;
 }
+
 .banner-2-title span {
     color: #534C64;
     font-weight: 700;
     font-size: 1rem;
 }
+
 .banner-2-btn {
     align-self: flex-end;
     margin-top: 32px;
@@ -260,7 +267,7 @@ main {
 
 
 
-/*  */
+/* style for card-section section */
 .card-section {
     padding: 20px;
 }
@@ -343,16 +350,12 @@ main {
 
 
 
-/*  */
+/* style for play section */
 .play {
     /* display: grid;
     grid-template-columns: repeat(2, 1fr); */
     display: flex;
     flex-direction: row;
-}
-.play-1 {
-    display: flex;
-    flex-direction: row-reverse;
 }
 
 .play-describe {
@@ -365,6 +368,48 @@ main {
     width: 80%;
     padding-left: 220px;
 }
+
+.play h1 {
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.play h1>span {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.play p {
+    color: #534C64;
+    font-size: 1.025rem;
+    font-weight: 400;
+}
+
+.play-img {
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.play .img-1 {
+    width: 80%;
+    border-radius: 8px;
+    transform: translateX(80px);
+}
+
+.play-img .img-2 {
+    width: 40%;
+    transform: translateY(-120px);
+}
+
+
+/* style for play-1 section */
+.play-1 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 .play-describe-1 {
     display: flex;
     flex-direction: column;
@@ -377,66 +422,42 @@ main {
     padding-left: 220px;
 }
 
-.play h1 {
-    margin-bottom: 10px;
-    font-weight: 700;
-}
 .play-1 h1 {
     margin-bottom: 10px;
     font-weight: 700;
 }
 
-.play h1>span {
-    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 .play-1 h1>span {
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.play p {
-    color: #534C64;
-    font-size: 1.025rem;
-    font-weight: 400;
-}
+
 .play-1 p {
     color: #534C64;
     font-size: 1.025rem;
     font-weight: 400;
 }
-.play-img {
-    margin-top: 50px;
-    justify-content: center;
-}
+
 .play-1-img {
     margin-top: 50px;
     justify-content: center;
 }
-.play .img-1 {
-    width: 80%;
-    border-radius: 8px;
-    transform: translateX(80px);
-}
-.play-img .img-2 {
-    width: 40%;
-    transform: translateY(-120px);
-}
+
 .play-1-img .img-3 {
     width: 80%;
     border-radius: 8px;
     padding-left: 10px;
 }
+
 .play-1-img .img-4 {
     width: 40%;
-    transform: translate(250px,-100px);
+    transform: translate(250px, -100px);
 }
 
 
-/*  */
+/* style for careers section */
 .careers {
     max-width: 1920px;
     display: flex;
@@ -482,7 +503,7 @@ main {
     border-radius: 48px;
     background: #FFF;
     border: none;
-    color: #FF42A5 ;
+    color: #FF42A5;
     font-size: 1.25rem;
     text-transform: uppercase;
     cursor: pointer;
@@ -494,7 +515,8 @@ main {
     margin-top: 50px;
     padding-left: 100px;
 }
-.careers-list ul{
+
+.careers-list ul {
     display: grid;
     color: #FFF;
     grid-template-columns: repeat(2, 1fr);
@@ -503,7 +525,10 @@ main {
     grid-gap: 20px;
 }
 
-/*  */
+
+
+
+/* style for game-types section */
 .game-types {
     display: flex;
     flex-wrap: wrap;
@@ -538,7 +563,7 @@ main {
 }
 
 
-/*  */
+/* style for footer section */
 footer {
     /* max-width: 1920px; */
     height: 500px;
